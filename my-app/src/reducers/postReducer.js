@@ -14,7 +14,13 @@ const initialState = {
 // This function evaluates what type we are dealing with. It takes in two things: the state and the action.
 // The action will include a type.
 export default function(state = initialState, action) {
+
     switch(action.type) {
+        case FETCH_POSTS:
+            return {
+                ...state,
+                items: action.payload
+            }
         default:
             return state;
     } 
