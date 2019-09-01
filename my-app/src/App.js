@@ -4,6 +4,7 @@ import Post from "./components/Post";
 import PostForm from "./components/PostForm";
 import { Provider } from "react-redux";
 import store from "./store";
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   return (
@@ -11,8 +12,16 @@ function App() {
     // The Provider should wrap the application
     <Provider store={store}>
       <div className="App">
-        <PostForm />
-        <Post />
+        <Container>
+          <Row>
+            <PostForm />
+          </Row>
+          <Row>
+            <Col l={4}>
+            <Post />
+          </Col>
+          </Row>
+          </Container>
       </div>
     </Provider>
   );
