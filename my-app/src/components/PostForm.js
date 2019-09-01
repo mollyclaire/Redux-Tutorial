@@ -23,7 +23,7 @@ onSubmit(event) {
     event.preventDefault();
 
     const post = {
-        this: this.state.title,
+        title: this.state.title,
         body: this.state.body
     }
 

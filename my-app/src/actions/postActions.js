@@ -1,6 +1,6 @@
 import { FETCH_POSTS, NEW_POST } from "./types";
 
-// This function is doing what the componentDidMount function was doing (with Redux)
+// This function is doing what the componentDidMount function was doing (with just plain React)
 export function fetchPosts() {
     // The thunk middleware allows us to call the dispatch function directly, so that we can make ascync requests.
     // dispatch is sort of like a promise
